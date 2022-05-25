@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="" alt="Логотип города Седона" class="logo" />
+      <nav class="main_navigation">
+        <ul class="main_menu">
+          <li class="main_menu_item main_item_current">
+            <a href="#"> Главная </a>
+          </li>
+          <li class="main_menu_item">
+            <a href="#">О Седоне</a>
+          </li>
+          <li class="main_menu_item">
+            <a href="#">Гостинницы </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="user_navigation">
+        <ul class="user_navigation_list">
+          <li class="user_navigation_item">
+            <a href="#"> <span class="visually_hidden"> Поиск </span> </a>
+          </li>
+          <li class="user_navigation_item">
+            <a href="#"> <span class="visually_hidden"> Лайки </span> </a>
+          </li>
+          <li class="user_navigation_item">
+            <button class="button_want">Хочу сюда</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually_hidden">Каталог гостинниц Седоны</h1>
+      <section class="hotel_filters">
+        <h2>Гостинницы Седоны</h2>
+        <ul class="breadcrumbs_catalog">
+          <li>Гостинницы</li>
+        </ul>
+        <form action="" method="post">
+          <p>Инфраструктура:</p>
+          <label>
+            <input type="checkbox" name="pool" />
+            Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="parking" />
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="wifi" />
+            Wi-fi
+          </label>
+          <p>Тип Жилья</p>
+          <label>
+            <input type="radio" name="hotel" />
+            Гостинница
+          </label>
+          <label>
+            <input type="radio" name="motel" />
+            Мотель
+          </label>
+          <label>
+            <input type="radio" name="appartaments" />
+            Аппартаменты
+          </label>
+          <p>Стоимость, ₽:</p>
+          <input type="number" name="min" id="min" min="0" max="10000" />
+          <input type="number" name="max" id="max" min="0" max="10000" />
+          <input type="range" name="minmax_price" id="minmax_price" />
+          <input type="submit" value="Применить" />
+          <button class="reset_filters">Сбросить</button>
+        </form>
+      </section>
+      <section class="sort_hotels">
+        <h2 class="visually_hidden">Сортировка гостинниц Седона</h2>
+        <p>Найдено Гостинниц: 38</p>
+        <select name="price_sort" id="price_sort">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <ul class="view_sort">
+          <li class="visible_hidden">Вид Таблицами</li>
+          <li class="visible_hidden">Вид Слайдами</li>
+          <li class="visible_hidden">Вид Списком</li>
+        </ul>
+        <ul class="hotel_list">
+          <li class="hotel_list_item">
+            <img src="#" alt="Горное ущелье и звездное небо" />
+            <h3>Amara Resort & Spa</h3>
+            <p>
+              <span>Гостинница</span>
+              <b> От 4000 ₽</b>
+            </p>
+            <a href="#" class="button"> Подробнее</a>
+            <a href="#" class="button"> В Избранное</a>
+            <p class="rating">Рейтинг: 8.5</p>
+          </li>
+          <li class="hotel_list_item">
+            <img src="#" alt="Горы и радуга на закате" />
+            <h3>Villas at Poco Diablo</h3>
+            <p>
+              <span>Гостинница</span>
+              <b> От 5000 ₽</b>
+            </p>
+            <a href="#" class="button"> Подробнее</a>
+            <a href="#" class="button"> В Избранное</a>
+            <p class="rating">Рейтинг: 9.2</p>
+          </li>
+          <li class="hotel_list_item">
+            <img src="#" alt="Горы с деревьями в солнечный день" />
+            <h3>Desert Quail Inn</h3>
+            <p>
+              <span>Гостинница</span>
+              <b> От 2500 ₽</b>
+            </p>
+            <a href="#" class="button"> Подробнее</a>
+            <a href="#" class="button"> В Избранное</a>
+            <p class="rating">Рейтинг: 6.9</p>
+          </li>
+          <li class="hotel_list_item">
+            <img src="#" alt="Горы и звездное небо в оранжевом цвете" />
+            <h3>GreenTree Inn</h3>
+            <p>
+              <span>Гостинница</span>
+              <b> От 1500 ₽</b>
+            </p>
+            <a href="#" class="button"> Подробнее</a>
+            <a href="#" class="button"> В Избранное</a>
+            <p class="rating">Рейтинг: 5.0</p>
+          </li>
+        </ul>
+        <ul class="pagination_hotel">
+          <li class="pagination_hotel_item pagination_item_current">
+            <a>1</a>
+          </li>
+          <li class="pagination_hotel_item">
+            <a href="#">3 </a>
+          </li>
+          <li class="pagination_hotel_item">
+            <a href="#">2 </a>
+          </li>
+          <li class="pagination_hotel_item">
+            <a href="#">4 </a>
+          </li>
+          <li class="pagination_hotel_item">
+            <a href="#">... </a>
+          </li>
+          <li class="pagination_hotel_item">
+            <a href="#">10 </a>
+          </li>
+        </ul>
+        <p>Гостинниц на странице</p>
+        <select name="hotel_on_page" id="hotel_on_page">
+          <option value="4">4</option>
+        </select>
+      </section>
+      <section class="subscribe">
+        <h2>Подпишитесь на разсылку</h2>
+        <p>
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="subscribe_form" action="#">
+          <input type="email" name="email_subscribe" id="email_subscribe" />
+          <input type="submit" value="Подписаться" />
+        </form>
+      </section>
+    </main>
+    <footer class="main_footer">
+      <ul class="social_list">
+        <li>
+          <a class="" href="vk.com">
+            <span class="visually_hidden"> Вконтакте </span></a
+          >
+        </li>
+        <li>
+          <a href="t.me" class="">
+            <span class="visually_hidden"> Телеграм </span></a
+          >
+        </li>
+        <li>
+          <a href="youtube.com" class=""
+            ><span class="visually_hidden"> YouTube </span></a
+          >
+        </li>
+      </ul>
+      <a class="contact_phone" href="tel:+7(812)812-12-12">
+        +7 (812) 812-12-12
+      </a>
+      <a href="htmlacademy.ru">
+        <img src="#" alt="Логотип разработчика сайта, компании htmlacademy" />
+      </a>
+    </footer>
+  </body>
+</html>
