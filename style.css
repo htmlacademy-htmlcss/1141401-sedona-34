@@ -1,0 +1,16 @@
+.welcome_screen {
+    background-image: url(images/index-background.jpg);
+    background-repeat: no-repeat;
+}
+.welcome_screen_img {
+    display: block;
+    margin: 0 auto;
+}
+.subscribe {
+    background-image: url(images/subscribe-backround.jpg);
+    background-repeat: no-repeat;
+}
+.wrapper {
+    width: 1280px;
+    margin:0 auto;
+}

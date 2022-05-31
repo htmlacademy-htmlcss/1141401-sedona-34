@@ -18,7 +18,7 @@
             <a href="#">О Седоне</a>
           </li>
           <li class="main_menu_item">
-            <a href="#">Гостинницы </a>
+            <a href="#">Гостиницы </a>
           </li>
         </ul>
       </nav>
@@ -37,11 +37,14 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually_hidden">Каталог гостинниц Седоны</h1>
+      <h1 class="visually_hidden">Каталог гостиниц Седоны</h1>
       <section class="hotel_filters">
-        <h2>Гостинницы Седоны</h2>
+        <h2>Гостиницы Седоны</h2>
         <ul class="breadcrumbs_catalog">
-          <li>Гостинницы</li>
+          <li>
+            <a href="" class="visually_hiden">Главная</a>
+          </li>
+          <li>Гостиницы</li>
         </ul>
         <form action="" method="post">
           <p>Инфраструктура:</p>
@@ -60,7 +63,7 @@
           <p>Тип Жилья</p>
           <label>
             <input type="radio" name="hotel" />
-            Гостинница
+            Гостиница
           </label>
           <label>
             <input type="radio" name="motel" />
@@ -75,13 +78,13 @@
           <input type="number" name="max" id="max" min="0" max="10000" />
           <input type="range" name="minmax_price" id="minmax_price" />
           <input type="submit" value="Применить" />
-          <button class="reset_filters">Сбросить</button>
+          <input type="reset" class="reset_filters" value="Сбросить" />
         </form>
       </section>
       <section class="sort_hotels">
-        <h2 class="visually_hidden">Сортировка гостинниц Седона</h2>
-        <p>Найдено Гостинниц: 38</p>
-        <select name="price_sort" id="price_sort">
+        <h2 class="visually_hidden">Сортировка гостиниц Седона</h2>
+        <p>Найдено Гостиниц: 38</p>
+        <select name="price_sort">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
@@ -95,44 +98,44 @@
             <img src="#" alt="Горное ущелье и звездное небо" />
             <h3>Amara Resort & Spa</h3>
             <p>
-              <span>Гостинница</span>
+              <span>Гостиница</span>
               <b> От 4000 ₽</b>
             </p>
             <a href="#" class="button"> Подробнее</a>
-            <a href="#" class="button"> В Избранное</a>
+            <button class="button">В Избранное</button>
             <p class="rating">Рейтинг: 8.5</p>
           </li>
           <li class="hotel_list_item">
             <img src="#" alt="Горы и радуга на закате" />
             <h3>Villas at Poco Diablo</h3>
             <p>
-              <span>Гостинница</span>
+              <span>Гостиница</span>
               <b> От 5000 ₽</b>
             </p>
             <a href="#" class="button"> Подробнее</a>
-            <a href="#" class="button"> В Избранное</a>
+            <button class="button">В Избранное</button>
             <p class="rating">Рейтинг: 9.2</p>
           </li>
           <li class="hotel_list_item">
             <img src="#" alt="Горы с деревьями в солнечный день" />
             <h3>Desert Quail Inn</h3>
             <p>
-              <span>Гостинница</span>
+              <span>Гостиница</span>
               <b> От 2500 ₽</b>
             </p>
             <a href="#" class="button"> Подробнее</a>
-            <a href="#" class="button"> В Избранное</a>
+            <button class="button">В Избранное</button>
             <p class="rating">Рейтинг: 6.9</p>
           </li>
           <li class="hotel_list_item">
             <img src="#" alt="Горы и звездное небо в оранжевом цвете" />
             <h3>GreenTree Inn</h3>
             <p>
-              <span>Гостинница</span>
+              <span>Гостиница</span>
               <b> От 1500 ₽</b>
             </p>
             <a href="#" class="button"> Подробнее</a>
-            <a href="#" class="button"> В Избранное</a>
+            <button class="button">В Избранное</button>
             <p class="rating">Рейтинг: 5.0</p>
           </li>
         </ul>
@@ -156,13 +159,13 @@
             <a href="#">10 </a>
           </li>
         </ul>
-        <p>Гостинниц на странице</p>
+        <p>Гостиниц на странице</p>
         <select name="hotel_on_page" id="hotel_on_page">
           <option value="4">4</option>
         </select>
       </section>
       <section class="subscribe">
-        <h2>Подпишитесь на разсылку</h2>
+        <h2>Подпишитесь на рассылку</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
