@@ -90,6 +90,36 @@ body {
     margin: 0 auto;
     margin-top: 31px;
 }
+.advantage_list {
+    list-style: none;
+}
+.advantage_item h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantage_item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #82B3D3;
+}
+.features_list {
+    list-style: none;
+}
+.features_item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
 .subscribe {
     background-image: url(images/subscribe-backround.jpg);
     background-repeat: no-repeat;
