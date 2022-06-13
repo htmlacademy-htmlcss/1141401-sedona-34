@@ -31,12 +31,15 @@
         <nav class="user_navigation">
           <ul class="user_navigation_list">
             <li class="user_navigation_item">
-              <a href="#"> <span class="visually_hidden"> Поиск </span> </a>
+              <a href="#" class="user_navigation_search"> <span class="visually_hidden"> Поиск </span> </a>
             </li>
             <li class="user_navigation_item">
-              <a href="#"> <span class="visually_hidden"> Лайки </span> </a>
+              <a href="#" class="user_navigation_like"> 
+                <span class="visually_hidden"> Лайки </span>
+                <span class="user_navigation_favoritenumber"> 12 </span>
+              </a>
             </li>
-            <li class="user_navigation_item">
+            <li class="">
               <button class="button_want">Хочу сюда</button>
             </li>
           </ul>
@@ -121,7 +124,7 @@
                 <p>Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="advantage_item advantage_item_bottom">
+            <li class="advantage_item advantage_item_bottom advantage_item_middle">
               <div>
                 <h3>Красивая дорога</h3>
                 <span> - №4 - </span>
@@ -137,14 +140,14 @@
               </li>
           </ul>
         </section>
-        <section class="Hotel_Sedona_search">
+        <section class="hotel_sedona_search">
           <h2 class="visually_hidden">Поиск гостиницы в городе Седона</h2>
           <p>Заинтересовались?</p>
           <span
-            >Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            >Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </span>
-          <button class="Hotel_search_button">Поиск гостиницы в Седоне</button>
+          <button class="hotel_search_button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscribe">
           <h2>Подпишитесь на рассылку</h2>
@@ -152,27 +155,27 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="subscribe_form" action="#">
-            <input type="email" name="email_subscribe" id="email_subscribe" />
-            <input type="submit" value="Подписаться" />
+            <input class="email_subscribe" type="email" name="email_subscribe" value="Ваш e-mail" id="email_subscribe" />
+            <input class="email_submit" type="submit" value="Подписаться" />
           </form>
         </section>
       </main>
       <footer class="main_footer">
         <ul class="social_list">
           <li>
-            <a href="vk.com">
+            <a href="vk.com" class="vkontakte_link"> 
               <span class="visually_hidden"> Вконтакте </span></a
             >
           </li>
           <li>
-            <a href="t.me" class="">
+            <a href="t.me" class="telegram_link">
               <span class="visually_hidden"> Телеграм </span></a
             >
           </li>
           <li>
-            <a href="youtube.com" class=""
-              ><span class="visually_hidden"> YouTube </span></a
-            >
+            <a href="youtube.com" class="youtube_link">
+              <span class="visually_hidden"> YouTube </span>
+            </a>
           </li>
         </ul>
         <a class="contact_phone" href="tel:+7(812)812-12-12">
