@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Каталог</title>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="header">
-      <img src="" alt="Логотип города Седона" class="logo" />
-      <nav class="main_navigation">
-        <ul class="main_menu">
-          <li class="main_menu_item main_item_current">
-            <a href="#"> Главная </a>
-          </li>
-          <li class="main_menu_item">
-            <a href="#">О Седоне</a>
-          </li>
-          <li class="main_menu_item">
-            <a href="#">Гостиницы </a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="user_navigation">
-        <ul class="user_navigation_list">
-          <li class="user_navigation_item">
-            <a href="#"> <span class="visually_hidden"> Поиск </span> </a>
-          </li>
-          <li class="user_navigation_item">
-            <a href="#"> <span class="visually_hidden"> Лайки </span> </a>
-          </li>
-          <li class="user_navigation_item">
-            <button class="button_want">Хочу сюда</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="wrapper">
+      <header class="header">
+        <img
+          src="images/logo.svg"
+          alt="Логотип города Седона"
+          class="logo"
+          height="70"
+          width="139"
+        />
+        <nav class="main_navigation">
+          <ul class="main_menu">
+            <li class="main_menu_item">
+              <a href="index.html"> Главная </a>
+            </li>
+            <li class="main_menu_item">
+              <a href="#">О Седоне</a>
+            </li>
+            <li class="main_menu_item main_item_current">
+              <a>Гостиницы </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="user_navigation">
+          <ul class="user_navigation_list">
+            <li class="user_navigation_item">
+              <a href="#" class="user_navigation_search"> <span class="visually_hidden"> Поиск </span> </a>
+            </li>
+            <li class="user_navigation_item">
+              <a href="#" class="user_navigation_like"> 
+                <span class="visually_hidden"> Лайки </span>
+                <span class="user_navigation_favoritenumber"> 12 </span>
+              </a>
+            </li>
+            <li class="">
+              <button class="button_want">Хочу сюда</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main>
       <h1 class="visually_hidden">Каталог гостиниц Седоны</h1>
       <section class="hotel_filters">
@@ -165,14 +173,14 @@
           <option value="4">4</option>
         </select>
       </section>
-      <section class="subscribe_catalog">
+      <section class="subscribe subscribe_catalog">
         <h2>Подпишитесь на рассылку</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscribe_form" action="#">
-          <input type="email" name="email_subscribe" id="email_subscribe" />
-          <input type="submit" value="Подписаться" />
+          <input class="email_subscribe" type="email" name="email_subscribe" value="Ваш e-mail" id="email_subscribe" />
+          <input class="email_submit" type="submit" value="Подписаться" />
         </form>
       </section>
     </main>
