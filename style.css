@@ -402,11 +402,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    gap: 18px;
 }
 .hotel_list_item {
     width: 340px;
 }
+
 .hotel_filters {
 background-image: url(images/hotel-filters.jpg);
 background-repeat: no-repeat;
+}
+.hotel_filters h2 {
+    margin: 0px;
 }
