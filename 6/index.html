@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1141401-sedona-34/6/">
+</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img
+          src="images/logo.svg"
+          alt="Логотип города Седона"
+          class="logo"
+          height="70"
+          width="139"
+        />
+        <nav class="main_navigation">
+          <ul class="main_menu">
+            <li class="main_menu_item main_item_current">
+              <a> Главная </a>
+            </li>
+            <li class="main_menu_item">
+              <a href="#">О Седоне</a>
+            </li>
+            <li class="main_menu_item">
+              <a href="catalog.html">Гостиницы </a>
+            </li>                
+          </ul>
+        </nav>
+        <nav class="user_navigation">
+          <ul class="user_navigation_list">
+            <li class="user_navigation_item">
+              <a href="#" class="user_navigation_search"> <span class="visually_hidden"> Поиск </span> </a>
+            </li>
+            <li class="user_navigation_item">
+              <a href="#" class="user_navigation_like"> 
+                <span class="visually_hidden"> Лайки </span>
+                <span class="user_navigation_favoritenumber"> 12 </span>
+              </a>
+            </li>
+            <li class="">
+              <button class="button_want">Хочу сюда</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="welcome_screen">
+          <div class="background_text">
+            <img
+              class="welcome_screen_img"
+              src="images/welcome.svg"
+              alt="Приветсвуем в прекрасном городе Седона, потому что Большой Каньйон - дерьмо"
+              width="458"
+              height="352"
+            />
+          </div>
+          <h1 class="visually_hidden">Сайт города Седона</h1>
+          <p class="sedona_description">
+            Седона — небольшой городок в Аризоне,заслуживающий большего!
+          </p>
+          <span class="sedona_cool">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+          </span>
+        </section>
+        <section class="features">
+          <h2 class="visually_hidden">Преимущества</h2>
+          <ul class="advantage_list">
+            <li class="advantage_item">
+              <div>
+                <h3>Настоящий городок</h3>
+                <span> — №1 — </span>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img
+                src="images/features-photo-1.jpg"
+                alt="Красночная фотография отеля с флагами"
+                width="800"
+                height="384"
+              />
+            </li>
+            <li class="">
+              <ul class="features_list">
+                <li class="features_item">
+                  <img src="images/house.svg" width="75px" height="72px" alt="Иконка Готеля" />
+                  <h3 class="features_item_header">Жилье</h3>
+                  <p class="features_item_text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+                <li class="features_item features_item_middle" >
+                  <img src="images/food.svg" width="74px" height="70px" alt="Иконка Еды" />
+                  <h3 class="features_item_header">Еда</h3>
+                  <p class="features_item_text">
+                    Всегда заказывайте топовый фирменный бургер, вы не
+                    разочаруетесь!
+                  </p>
+                </li>
+                <li class="features_item">
+                  <img src="images/gift.svg" width="64px" height="76px" alt="Иконка подарка" />
+                  <h3 class="features_item_header">Сувениры</h3>
+                  <p class="features_item_text">
+                    Не только китайского, но и настоящего местного производства!
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="advantage_item">
+              <img
+                src="images/features-photo-2.jpg"
+                alt="Горы Седоны и мост Дьявола в желтом цвете."
+                width="800"
+                height="384"
+              />
+              <div>
+                <h3>Там есть мост дьявола</h3>
+                <span> - №2 - </span>
+                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
+            </li>
+            <li class="advantage_item advantage_item_bottom">
+              <div>
+                <h3>Небольшая площадь</h3>
+                <span> - №3 - </span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantage_item advantage_item_bottom advantage_item_middle">
+              <div>
+                <h3>Красивая дорога</h3>
+                <span> - №4 - </span>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantage_item advantage_item_bottom">
+              <div>
+                <h3>Мало туристов</h3>
+                <span> - №5 - </span>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+              </li>
+          </ul>
+        </section>
+        <section class="hotel_sedona_search">
+          <h2 class="visually_hidden">Поиск гостиницы в городе Седона</h2>
+          <p>Заинтересовались?</p>
+          <span
+            >Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
+            предложения гостиниц в Седоне
+          </span>
+          <button class="hotel_search_button">Поиск гостиницы в Седоне</button>
+        </section>
+        <section class="subscribe">
+          <h2>Подпишитесь на рассылку</h2>
+          <p>
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form class="subscribe_form" action="#">
+            <input class="email_subscribe" type="email" name="email_subscribe" value="Ваш e-mail" id="email_subscribe" />
+            <input class="email_submit" type="submit" value="Подписаться" />
+          </form>
+        </section>
+      </main>
+      <footer class="main_footer">
+        <ul class="social_list">
+          <li>
+            <a href="vk.com" class="vkontakte_link"> 
+              <span class="visually_hidden"> Вконтакте </span></a
+            >
+          </li>
+          <li>
+            <a href="t.me" class="telegram_link">
+              <span class="visually_hidden"> Телеграм </span></a
+            >
+          </li>
+          <li>
+            <a href="youtube.com" class="youtube_link">
+              <span class="visually_hidden"> YouTube </span>
+            </a>
+          </li>
+        </ul>
+        <a class="contact_phone" href="tel:+7(812)812-12-12">
+          +7 (812) 812-12-12
+        </a>
+        <a href="htmlacademy.ru">
+          <img
+            src="images/Logo-htmlacademy.svg"
+            alt="Логотип разработчика сайта, компании htmlacademy"
+            width="115"
+            height="33"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
