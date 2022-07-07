@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="">
-              <button class="button_want">Хочу сюда</button>
+              <button class="button button_want button_brown">Хочу сюда</button>
             </li>
           </ul>
         </nav>
@@ -57,7 +57,7 @@
                 <span class="visually_hidden"> Главная </span></a
               >
             </li>
-            <li>
+            <li class="breadcrums_item">
               <a> Гостиницы </a>
             </li>
           </ul>
@@ -124,7 +124,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="filters">
+            <fieldset class="filters price_filters">
               <legend class="filters_title">Стоимость, ₽:</legend>
 
               <div class="input_group">
@@ -184,8 +184,10 @@
                 <span>Гостиница</span>
                 <span>От 4000 ₽</span>
               </p>
-              <a href="#" class="button button_brown"> Подробнее</a>
-              <button class="button">В Избранное</button>
+              <div class="buttons_list_item">
+                <a href="#" class="button button_brown"> Подробнее</a>
+                <button class="button">В Избранное</button>
+              </div>
               <div class="rating_wrapper">
                 <ul class="star_rating_list">
                   <li class="star_rating_item"></li>
@@ -209,8 +211,10 @@
                 <span>Гостиница</span>
                 <span>От 5000 ₽</span>
               </p>
-              <a href="#" class="button button_brown"> Подробнее</a>
-              <button class="button">В Избранное</button>
+              <div class="buttons_list_item">
+                <a href="#" class="button button_brown"> Подробнее</a>
+                <button class="button button_green">В Избранное</button>
+              </div>
               <div class="rating_wrapper">
                 <ul class="star_rating_list">
                   <li class="star_rating_item"></li>
@@ -234,8 +238,10 @@
                 <span>Гостиница</span>
                 <span>От 2500 ₽</span>
               </p>
-              <a href="#" class="button button_brown"> Подробнее</a>
-              <button class="button">В Избранное</button>
+              <div class="buttons_list_item">
+                <button class="button">В Избранное</button>
+                <a href="#" class="button button_brown"> Подробнее</a>
+              </div>
               <div class="rating_wrapper">
                 <ul class="star_rating_list">
                   <li class="star_rating_item"></li>
@@ -258,8 +264,10 @@
                 <span>Гостиница</span>
                 <span>От 1500 ₽</span>
               </p>
-              <a href="#" class="button button_brown"> Подробнее</a>
-              <button class="button">В Избранное</button>
+              <div class="buttons_list_item">
+                <a href="#" class="button button_brown"> Подробнее</a>
+                <button class="button">В Избранное</button>
+              </div>
               <div class="rating_wrapper">
                 <ul class="star_rating_list">
                   <li class="star_rating_item"></li>
@@ -290,10 +298,12 @@
                 <a href="#">10 </a>
               </li>
             </ul>
-            <p>Гостиниц на странице</p>
-            <select name="hotel_on_page" id="hotel_on_page">
-              <option value="4">4</option>
-            </select>
+            <div class="hotel_on_page_wrapper">
+              <p>Гостиниц на странице</p>
+              <select class="hotel_on_page_select" name="hotel_on_page" id="hotel_on_page">
+                <option value="4">4</option>
+              </select>
+            </div>
           </div>
         </section>
         <section class="subscribe subscribe_catalog">
