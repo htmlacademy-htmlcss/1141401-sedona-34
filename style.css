@@ -217,7 +217,7 @@ body {
 
 .advantage_item p {
     margin:0px;
-    margin-top: 30px; 
+    margin-top: 30px;
     text-align: center;
     width: 230px;
 
@@ -252,7 +252,7 @@ body {
     text-transform: uppercase;
     margin: 0 auto;
     margin-top: 30px;
-    
+
 }
 .features_item_text {
     color: #333333;
@@ -439,7 +439,30 @@ main {
     gap: 18px;
 }
 .hotel_list_item {
+    box-sizing: border-box;
     width: 340px;
+    padding: 20px;
+}
+.hotel_list_item_image {
+    width: 100%;
+    margin-bottom: 16px;
+    display: block;
+}
+.hotel_list_item_title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0 0 16px;
+}
+.hotel_list_item_text {
+    display: flex;
+    margin: 0 0 16px;
+}
+.hotel_list_item_text span{
+    width: 50%;
 }
 .rating_wrapper {
     display: flex;
@@ -483,15 +506,29 @@ main {
 .hotel_filters_form {
     display: flex;
 }
-.hotel_filters_form fieldset {
+.filters {
     display: flex;
     flex-direction: column;
+    border: none;
+    gap: 16px;
+}
+
+.filters_title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 30px;
 }
 .form_buttons {
     display: flex;
     flex-direction: column;
 }
 .hotel_filters_submit {
+    cursor: pointer;
     margin-top: 10px;
     margin-left: 70px;
     width: 160px;
@@ -518,7 +555,7 @@ main {
     margin-left: 70px;
 }
 .sort_hotels_filters {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -613,4 +650,140 @@ main {
 .pagination_item_current {
     background-color: #F2F2F2;
     color: #000;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox_label {
+    display: flex;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    user-select: none;
+}
+
+.checkbox_label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px 10px;
+}
+
+.checkbox_input:checked ~ .checkbox_label::before  {
+    background-image: url("./images/checked.svg");
+}
+
+.radio {
+    display: flex;
+}
+
+.radio_label {
+    display: flex;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    user-select: none;
+}
+
+.radio_label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px 10px;
+}
+
+.radio_input:checked ~ .radio_label::before  {
+    box-shadow: 0 0 0 5px #fff inset;
+    background-color: #3f5e72;
+}
+
+.input_group {
+    display: flex;
+}
+
+.input_field {
+    position: relative;
+}
+
+.input_field_placeholder {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.input_control {
+    outline: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+.input_field ~ .input_field {
+    margin-left: -2px;
+}
+
+.input_field:first-child .input_control {
+    border-radius: 4px 0 0 4px;
+}
+.input_field:last-child .input_control {
+    border-radius: 0 4px 4px 0;
+}
+
+.button {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: #82B3D3;
+    border-radius: 4px;
+    color: white;
+    height: 37px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    user-select: none;
+    text-decoration: none;
+}
+
+.button_brown {
+    background: #756157;
 }
