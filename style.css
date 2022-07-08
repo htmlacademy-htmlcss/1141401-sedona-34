@@ -334,6 +334,9 @@ body {
     padding-left: 22px;
     padding-top: 20px;
     padding-bottom: 19px;
+    background: #F2F2F2;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
 }
 .subscribe_form {
     margin-top: 45px;
@@ -753,6 +756,17 @@ main {
     background-position: center center;
     background-size: 12px 10px;
 }
+.checkbox_input:hover ~ .checkbox_label::before  {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.checkbok_input:focus ~ .checkbox_labe::before {
+    background: rgba(255, 255, 255, 0.6);
+    border: 3px solid #83B3D3;
+}
+
+.checkbox_input:active ~ .checkbox_label::before  {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
 .checkbox_input:checked ~ .checkbox_label::before  {
     background-image: url("./images/checked.svg");
@@ -784,13 +798,17 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 12px 10px;
+    border: 3px solid #fff;
 }
 
 .radio_input:checked ~ .radio_label::before  {
     box-shadow: 0 0 0 5px #fff inset;
     background-color: #3f5e72;
+    border: 3px solid #fff;
 }
-
+.radio_input:focus ~ .radio_label::before  {
+    border: 3px solid #83B3D3;
+}
 .input_group {
     display: flex;
 }
@@ -804,7 +822,6 @@ main {
     right: 14px;
     top: 50%;
     transform: translateY(-50%);
-
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
@@ -904,3 +921,154 @@ main {
 .button_blue:active {
     background-color: #82B3D3;
 }
+.view_sort_item:hover {
+    border: 2px solid #000000;
+}
+.view_sort_item:focus {
+    border: 2px solid #82B3D3;
+}
+.view_sort_item:active {
+    border: 2px solid #000;
+}
+.range {
+    margin-top: 32px;
+}
+.range_scale {
+    position:relative;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.range_bar {
+    position:absolute;
+    height: 4px;
+    background-color: #fff;
+}
+.range_toogle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.range_toogle:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.range_toogle:focus {
+    border: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.range_toogle:active {
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+    border: 2px solid #83B3D3;
+}
+.toogle_min {
+    top: -8px;
+    left: -10px;
+}
+.toogle_max {
+    top: -8px;
+    right: -10px;
+}
+.modal_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 242, 242, 0.8);
+   
+}
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 62px 68px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    background: #FFFFFF;
+}
+.modal_search {
+    width: 715px;
+}
+.modal_title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.modal_close_button {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 53px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    border: none;
+    background-image: url("images/close_modal.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  } 
+
+.field {
+    width: 420px;
+    height: 50px;
+    padding: 14px 19px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    border:none;
+    box-sizing: border-box;
+  }
+.field_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.calendar_ico {
+    position:relative;
+}
+.calendar_ico::before {
+    position:absolute;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 17px;
+    right: 17px;
+    background-image: url(images/calendar.svg);
+}
+.checkin::after {
+    position:absolute;
+    display: block;
+    content: "Мы не можем отправить вас в прошлое.";
+    top: 60px;
+    left: 20px;
+    color: #FF5757;
+}
+.checkout::after {
+    position:absolute;
+    display: block;
+    content: "На эти даты есть свободные номера. Пока есть..";
+    top: 60px;
+    left: 20px;
+    color: #333;
+}
+.label_date {
+    font-style: normal;
+    margin-right: 42px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'PT Sans';
+  }
+.label_checkout {
+    margin-right: 36px;
+  }

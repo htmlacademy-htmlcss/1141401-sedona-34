@@ -129,15 +129,23 @@
 
               <div class="input_group">
                 <div class="input_field">
-                  <div class="input_field_placeholder" for="">от</div>
+                  <div class="input_field_placeholder" >от</div>
                   <input class="input_control" type="text" />
                 </div>
                 <div class="input_field">
-                  <div class="input_field_placeholder" for="">до</div>
+                  <div class="input_field_placeholder" >до</div>
                   <input class="input_control" type="text" />
                 </div>
               </div>
-              <input type="range" name="minmax_price" id="minmax_price" />
+
+              <div class="range">
+                <div class="range_scale">
+                  <div class="range_bar" style="left:40px; width: 50px;">
+                    <button type="button" class="range_toogle toogle_min"> </button>
+                    <button type="button" class="range_toogle toogle_max"> </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="form_buttons">
               <input
@@ -427,6 +435,30 @@
           </svg>
         </a>
       </footer>
+    </div>
+    <div class="modal_container">
+      <div class="modal modal_search">
+        <button class="modal_close_button">
+          <span class="visually_hidden">Закрыть</span>
+        </button>
+        <section class="modal_content">
+          <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field_group">
+              <label class="label_date" for="checkin_date">Дата Заезда</label>
+              <div class="calendar_ico checkin">
+                <input class="checkin_date_field field" type="text" id="checkin_date" name="checkin_date" placeholder="Укажите дату">
+              </div>
+            </div>
+            <div class="field_group">
+              <label class="label_date label_checkout" for="checkout_date">Дата Выезда</label>
+              <div class="calendar_ico checkout">
+                <input class="checkout_date_field field" type="text" id="checkout_date" name="checkout_date" placeholder="Укажите дату">
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
