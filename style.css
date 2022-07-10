@@ -1191,7 +1191,7 @@ body {
 }
 .field_label_thin {
     flex: 0 0 auto;
-    margin-right: 15px;
+    margin-right: 2px;
 }
 
 .field_counter {
@@ -1245,7 +1245,8 @@ body {
     justify-content: center;
     color: white;
     font-size: 14px;
-    margin: 0 5px;
+    margin: 12px 1px;
+    margin-right:10px
 }
 .tooltip:hover .tooltip_content {
     opacity: 1;
