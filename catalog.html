@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link type="image/x-icon" href="images/favicon.svg" rel="shortcut icon">
+    <link type="Image/x-icon" href="images/favicon.svg" rel="icon">
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
@@ -42,7 +44,7 @@
               </a>
             </li>
             <li class="">
-              <button class="button button_want button_brown">Хочу сюда</button>
+              <button class="button_want button_brown">Хочу сюда</button>
             </li>
           </ul>
         </nav>
@@ -70,6 +72,7 @@
                   class="checkbox_input visually_hidden"
                   type="checkbox"
                   name="pool"
+                  checked
                 />
                 <label for="pool" class="checkbox_label">Бассейн</label>
               </div>
@@ -79,8 +82,9 @@
                   class="checkbox_input visually_hidden"
                   type="checkbox"
                   name="parking"
+                  checked
                 />
-                <label for="parking" class="checkbox_label">Парковка</label>
+                <label for="parking" class="checkbox_label" >Парковка</label>
               </div>
               <div class="checkbox">
                 <input
@@ -101,8 +105,9 @@
                   class="radio_input visually_hidden"
                   type="radio"
                   name="house_type"
+                  checked
                 />
-                <label for="hotel" class="radio_label">Гостиница</label>
+                <label for="hotel" class="radio_label" >Гостиница</label>
               </div>
               <div class="radio">
                 <input
@@ -130,17 +135,17 @@
               <div class="input_group">
                 <div class="input_field">
                   <div class="input_field_placeholder" >от</div>
-                  <input class="input_control" type="text" />
+                  <input class="input_control" type="text" value="0"/>
                 </div>
                 <div class="input_field">
                   <div class="input_field_placeholder" >до</div>
-                  <input class="input_control" type="text" />
+                  <input class="input_control" value="9000" type="text" />
                 </div>
               </div>
 
               <div class="range">
                 <div class="range_scale">
-                  <div class="range_bar" style="left:40px; width: 50px;">
+                  <div class="range_bar" style="left:10px; width: 216px;">
                     <button type="button" class="range_toogle toogle_min"> </button>
                     <button type="button" class="range_toogle toogle_max"> </button>
                   </div>
@@ -220,7 +225,7 @@
               </p>
               <div class="buttons_list_item">
                 <a href="#" class="button button_brown"> Подробнее</a>
-                <button class="button button_green">В Избранное</button>
+                <button class="button button_green">В Избранном</button>
               </div>
               <div class="rating_wrapper">
                 <ul class="star_rating_list">
@@ -435,41 +440,6 @@
           </svg>
         </a>
       </footer>
-    </div>
-    <div class="modal_container">
-      <div class="modal modal_search">
-        <button class="modal_close_button">
-          <span class="visually_hidden">Закрыть</span>
-        </button>
-        <section class="modal_content">
-          <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
-          <form class="hotel_modal_search" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="field_group">
-              <label class="label_date" for="checkin_date">Дата Заезда</label>
-              <div class="calendar_ico checkin">
-                <input class="checkin_date_field field" type="text" id="checkin_date" name="checkin_date" placeholder="Укажите дату">
-              </div>
-            </div>
-            <div class="field_group">
-              <label class="label_date label_checkout" for="checkout_date">Дата Выезда</label>
-              <div class="calendar_ico checkout">
-                <input class="checkout_date_field field" type="text" id="checkout_date" name="checkout_date" placeholder="Укажите дату">
-              </div>
-            </div>
-            <div class="old_n_kids">
-              <label class="label_old" for="old"> Взрослые </label>
-              <div class="people_counter">
-                <input class="counter field" type="text" name="old" id="old">
-              </div>
-              <label class="label_kids" for="kids">Дети</label>
-              <div class="people_counter">
-                <input type="text" class="counter field" name="kids" id="kids">
-              </div>
-            </div>
-            <button type="submit" class="button button_form_search">Найти</button>
-          </form>
-        </section>
-      </div>
     </div>
   </body>
 </html>
