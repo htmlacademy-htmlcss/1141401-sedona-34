@@ -283,7 +283,7 @@ body {
 
 }
 .features_item_text {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -319,7 +319,7 @@ body {
     margin-top: 29px;
 }
 .hotel_search_button {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -386,7 +386,7 @@ body {
     border-radius: 0px 10px 10px 0px;
     color: #fff;
     padding: 12px 15px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -403,7 +403,7 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-main {
+.main {
     flex-grow: 1;
 }
 .social_list {
@@ -517,7 +517,7 @@ main {
     display: block;
 }
 .hotel_list_item_title {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -557,7 +557,7 @@ main {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     margin: 0px;
     padding: 9px 22px 8px 23px;
     background-color: #F2F2F2;
@@ -597,7 +597,7 @@ main {
     margin-left: 166px;
 }
 .filters_title {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -627,7 +627,7 @@ main {
     padding: 14px 15px;
 }
 .reset_filters {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -815,7 +815,7 @@ main {
 .checkbox_label {
     display: flex;
     align-items: center;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -858,7 +858,7 @@ main {
 .radio_label {
     display: flex;
     align-items: center;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -899,7 +899,7 @@ main {
     right: 14px;
     top: 50%;
     transform: translateY(-50%);
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -940,7 +940,7 @@ main {
 }
 
 .button {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1082,7 +1082,7 @@ main {
     width: 715px;
 }
 .modal_title {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -1132,7 +1132,7 @@ main {
 }
 
 .field {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1163,7 +1163,7 @@ main {
 }
 
 .field_info {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1186,7 +1186,7 @@ main {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', Arial, sans-serif;
     flex: 0 0 120px;
 }
 .field_label_thin {
@@ -1261,7 +1261,7 @@ main {
     transform: translateX(-50%);
     pointer-events: none;
     opacity: 0;
-    transition: .2s ease;
+    transition: .2s;
     background-color: #333333;
     padding: 15px;
     width: 256px;
