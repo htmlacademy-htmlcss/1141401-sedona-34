@@ -262,5 +262,61 @@
         </a>
       </footer>
     </div>
+    <div class="modal_container">
+      <div class="modal modal_search">
+        <button class="modal_close_button">
+          <span class="modal_close_button_icon"></span>
+          <span class="visually_hidden">Закрыть</span>
+        </button>
+        <section class="modal_content">
+          <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+          <form class="hotel_modal_search" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field_group">
+              <label class="field_label" for="checkin_date">Дата Заезда:</label>
+              <div class="field_content">
+                <input class="field field_date" type="text" id="checkin_date" name="checkin_date" placeholder="Укажите дату">
+                <div class="field_info field_error">
+                  Мы не можем отправить вас в прошлое.
+                </div>
+              </div>
+            </div>
+            <div class="field_group">
+              <label class="field_label" for="checkout_date">Дата Выезда:</label>
+              <div class="field_content">
+                <input class="field field_date" type="text" id="checkout_date" name="checkout_date" placeholder="Укажите дату">
+                <div class="field_info">
+                  На эти даты есть свободные номера. Пока есть..
+                </div>
+              </div>
+            </div>
+            <div class="old_n_kids">
+              <div class="field_group">
+                <label class="field_label" for="old">Взрослые:</label>
+                <div class="field_counter">
+                  <span class="counter_button">-</span>
+                  <input class="field" type="text" name="old" id="old">
+                  <span class="counter_button">+</span>
+                </div>
+            </div>
+            <div class="field_group">
+                <label class="field_label field_label_thin" for="kids">
+                  Дети:
+                  <div class="tooltip">
+                    i
+                    <div class="tooltip_content">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+                  </div>
+                </label>
+                <div class="field_counter">
+                  <span class="counter_button">-</span>
+                  <input type="text" class="field" name="kids" id="kids">
+                  <span class="counter_button">+</span>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="button button_form_search">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
