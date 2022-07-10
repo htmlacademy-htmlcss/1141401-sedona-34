@@ -573,14 +573,14 @@ main {
 
 .hotel_filters h2 {
     margin-top: 0px;
-    margin-bottom:0px;
+    margin-bottom:7px;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #fff;
 }
 .hotel_filters_form {
-    margin-top:48px;
+    margin-top:41px;
     display: flex;
 }
 .filters {
