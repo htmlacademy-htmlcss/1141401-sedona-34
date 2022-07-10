@@ -344,6 +344,7 @@ body {
     background-image:none;
     background-color: #fff;
     color: #000000;
+    padding-top: 80px;
 }
 .subscribe h2 {
     font-weight: 700;
@@ -465,6 +466,7 @@ main {
     color: rgba(117, 97, 87, 0.3);
 }
 .breadcrumbs_catalog {
+    margin-top:0px;
     display: flex;
     list-style: none;
     font-weight: 400;
@@ -507,6 +509,7 @@ main {
     box-sizing: border-box;
     width: 340px;
     padding: 20px;
+    padding-bottom:0px;
 }
 .hotel_list_item_image {
     width: 100%;
@@ -565,17 +568,19 @@ main {
     background-image: url(images/hotel-filters.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 35px 70px 70px 70px;
+    padding: 35px 70px 65px 70px;
 }
 
 .hotel_filters h2 {
     margin-top: 0px;
+    margin-bottom:0px;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #fff;
 }
 .hotel_filters_form {
+    margin-top:48px;
     display: flex;
 }
 .filters {
@@ -586,10 +591,10 @@ main {
     gap: 16px;
 }
 .filters:first-child {
-    margin-right: 70px;
+    margin-right: 64px;
 }
 .price_filters {
-    margin-left: 175px;
+    margin-left: 166px;
 }
 .filters_title {
     font-family: 'PT Sans';
@@ -622,18 +627,31 @@ main {
     padding: 14px 15px;
 }
 .reset_filters {
+    font-family: 'PT Sans';
+    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 23px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     color: white;
     margin-top: 20px;
     margin-left: 70px;
+    box-sizing: border-box;
+}
+.reset_filters:hover {
+    opacity: 0.6;
+}
+.reset_filters:focus {
+    border-radius: 4px;
+    outline: 3px solid #83B3D3;
+}
+.reset_filters:active {
+    opacity: 0.3;
 }
 .sort_hotels {
-    margin-top: 54px;
+    margin-top: 21px;
 }
 .sort_hotels_filters {
     display: flex;
@@ -717,7 +735,8 @@ main {
     justify-content: space-between;
     border-top: 1px solid #e6e6e6;
     margin: 0px 72px;
-    margin-top: 66px;
+    margin-top: 88px;
+    padding-top: 12px;
 }
 .pagination_hotel_list {
     display: flex;
@@ -902,7 +921,13 @@ main {
     width: 144px;
     box-sizing: border-box;
 }
-
+.input_control:focus {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+.input_control:focus {
+    background-color: #756257;
+}
 .input_field ~ .input_field {
     margin-left: -2px;
 }
@@ -989,7 +1014,7 @@ main {
     outline: 2px solid #000;
 }
 .range {
-    margin-top: 32px;
+    margin-top: 17px;
 }
 .range_scale {
     position:relative;
