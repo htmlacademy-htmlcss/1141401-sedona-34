@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="images/favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
-    <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
@@ -35,12 +34,32 @@
           <ul class="user_navigation_list">
             <li class="user_navigation_item">
               <a href="#" class="user_navigation_search">
+                <svg
+                  width="19"
+                  height="19"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m18.16 17.05-3.71-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8.02-8a8.12 8.12 0 0 0-8.02 8.1c0 4.4 3.6 8 8.02 8 1.8 0 3.51-.6 4.91-1.7l3.71 3.7 1.4-1.5Zm-10.03-2.5c-3.3 0-6.02-2.7-6.02-6a6.03 6.03 0 0 1 12.04 0c0 3.3-2.71 6-6.02 6Z"
+                  />
+                </svg>
                 <span class="visually_hidden"> Поиск </span>
               </a>
             </li>
             <li class="user_navigation_item">
               <a href="#" class="user_navigation_like">
                 <span class="visually_hidden"> Лайки </span>
+                <svg
+                  width="19"
+                  height="17"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.58 17c-.3 0-.6-.1-.8-.4-5.42-6.1-6.72-7.5-7.03-7.9A5.4 5.4 0 0 1 6.16 0c1.31 0 2.51.5 3.52 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.31 3.4l-7.02 7.9c-.2.2-.4.3-.8.3ZM3.56 7.5c.3.4 3.51 4 6.12 6.9l6.21-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.71-1.3c-1.8 0-3.31 1.5-3.31 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
+                  />
+                </svg>
                 <span class="user_navigation_favoritenumber"> 12 </span>
               </a>
             </li>
@@ -55,16 +74,33 @@
         <section class="hotel_filters">
           <h2>Гостиницы Седоны</h2>
           <ul class="breadcrumbs_catalog">
-            <li>
-              <a href="index.html" class="main_breadcrumbs">
+            <li class="main_breadcrumbs breadcrumbs_item">
+              <a href="index.html">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z"
+                  />
+                </svg>
                 <span class="visually_hidden"> Главная </span></a
               >
             </li>
-            <li class="breadcrums_item">
+            <li class="breadcrumbs_item">
               <a> Гостиницы </a>
             </li>
           </ul>
-          <form class="hotel_filters_form" action="https://echo.htmlacademy.ru/" method="post">
+          <form
+            class="hotel_filters_form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
             <fieldset class="filters">
               <legend class="filters_title">Инфраструктура:</legend>
               <div class="checkbox">
@@ -85,7 +121,7 @@
                   name="parking"
                   checked
                 />
-                <label for="parking" class="checkbox_label" >Парковка</label>
+                <label for="parking" class="checkbox_label">Парковка</label>
               </div>
               <div class="checkbox">
                 <input
@@ -108,7 +144,7 @@
                   name="house_type"
                   checked
                 />
-                <label for="hotel" class="radio_label" >Гостиница</label>
+                <label for="hotel" class="radio_label">Гостиница</label>
               </div>
               <div class="radio">
                 <input
@@ -135,20 +171,44 @@
 
               <div class="input_group">
                 <div class="input_field">
-                  <div class="input_field_placeholder" >от</div>
-                  <input class="input_control" type="text" value="0"/>
+                  <input
+                    id="min_price_input"
+                    class="input_control"
+                    type="text"
+                    value="0"
+                    name="min_price"
+                  />
+                  <label for="min_price_input" class="input_field_placeholder"
+                    >от</label
+                  >
                 </div>
                 <div class="input_field">
-                  <div class="input_field_placeholder" >до</div>
-                  <input class="input_control" value="9000" type="text" />
+                  <input
+                    id="max_price_input"
+                    class="input_control"
+                    value="9000"
+                    type="text"
+                    name="max_price"
+                  />
+                  <label for="max_price_input" class="input_field_placeholder"
+                    >до</label
+                  >
                 </div>
               </div>
 
               <div class="range">
                 <div class="range_scale">
-                  <div class="range_bar" style="left:10px; width: 216px;">
-                    <button type="button" class="range_toogle toogle_min"> </button>
-                    <button type="button" class="range_toogle toogle_max"> </button>
+                  <div class="range_bar" style="left: 10px; width: 216px">
+                    <button type="button" class="range_toogle toogle_min">
+                      <span class="visually_hidden">
+                        ползунок изменения стоимости, левый
+                      </span>
+                    </button>
+                    <button type="button" class="range_toogle toogle_max">
+                      <span class="visually_hidden">
+                        ползунок изменения стоимости, правый</span
+                      >
+                    </button>
                   </div>
                 </div>
               </div>
@@ -172,13 +232,16 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
             <ul class="view_sort">
-              <li class="view_sort_item table_view view_sort_current">
+              <li
+                tabindex="0"
+                class="view_sort_item table_view view_sort_current"
+              >
                 <span class="visually_hidden">Вид Таблицами</span>
               </li>
-              <li class="view_sort_item slide_view">
+              <li tabindex="0" class="view_sort_item slide_view">
                 <span class="visually_hidden">Вид Слайдами</span>
               </li>
-              <li class="view_sort_item list_view">
+              <li tabindex="0" class="view_sort_item list_view">
                 <span class="visually_hidden">Вид Списком</span>
               </li>
             </ul>
@@ -328,7 +391,11 @@
           <p>
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
+          <form
+            class="subscribe_form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
             <input
               class="email_subscribe"
               type="email"
@@ -336,14 +403,18 @@
               value="Ваш e-mail"
               id="email_subscribe"
             />
-            <input class="email_submit button_blue" type="submit" value="Подписаться" />
+            <input
+              class="email_submit button_blue"
+              type="submit"
+              value="Подписаться"
+            />
           </form>
         </section>
       </main>
       <footer class="main_footer">
         <ul class="social_list">
           <li>
-            <a href="vk.com" class="social_link">
+            <a href="https://vk.com/htmlacademy" class="social_link">
               <span class="visually_hidden"> Вконтакте </span>
               <svg
                 width="24"
@@ -361,7 +432,7 @@
             </a>
           </li>
           <li>
-            <a href="t.me" class="social_link">
+            <a href="https://t.me/htmlacademy " class="social_link">
               <svg
                 width="18"
                 height="16"
@@ -377,7 +448,10 @@
             >
           </li>
           <li>
-            <a href="youtube.com" class="social_link">
+            <a
+              href="https://www.youtube.com/user/htmlacademyru"
+              class="social_link"
+            >
               <span class="visually_hidden"> YouTube </span>
               <svg
                 width="22"
@@ -397,6 +471,7 @@
           +7 (812) 812-12-12
         </a>
         <a class="htmlacademy_logo" href="htmlacademy.ru">
+          <span class="visually_hidden">Логотип компании htmlacademy</span>
           <svg
             width="115"
             height="33"
