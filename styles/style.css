@@ -793,6 +793,25 @@ body {
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 20px;
+    appearance: none; 
+    overflow: hidden;
+    background: url(/images/arrow_select_price.svg) no-repeat;  
+    background-position: bottom 20px right 21px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.price_sort:hover {
+    border: 2px solid #83B3D3;
+
+}
+
+.price_sort:focus {
+    border: 2px solid #83B3D3;
+}
+
+.price_sort:active {
+    opacity: 0.3;
 }
 
 .view_sort {
@@ -1104,7 +1123,7 @@ body {
     background-color: #82B3D3;
     border-radius: 4px;
     color: white;
-    height: 37px;
+    min-height: 37px;
     padding: 0 15px;
     outline: none;
     border: none;
@@ -1112,6 +1131,7 @@ body {
     text-decoration: none;
     width: 140px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .buttons_list_item {
