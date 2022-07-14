@@ -172,7 +172,7 @@ body {
 
 .background_text{
     background-color: black;
-    background-image: url(/images/index-background.jpg);
+    background-image: url(../images/index-background.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     position:relative;
@@ -187,7 +187,7 @@ body {
     right:0;
     top:425px;
     bottom:0px;
-    background-image: url(/images/divider.svg);
+    background-image: url(../images/divider.svg);
     max-width: 100%;
     background-repeat: no-repeat;
 }
@@ -367,7 +367,7 @@ body {
 
 .subscribe {
     padding: 66px 200px 98px 200px;
-    background-image: url(/images/subscribe-backround.jpg);
+    background-image: url("../images/subscribe-backround.jpg");
     background-repeat: no-repeat;
     color: #fff;
 }
@@ -578,7 +578,7 @@ body {
     height: 9px;
     left: 26px;
     top: 6px;
-    background-image: url(/images/arrow_vector.svg);
+    background-image: url(../images/arrow_vector.svg);
 }
 
 .hotel_list {
@@ -642,7 +642,7 @@ body {
 .star_rating_item {
     width: 18px;
     height: 17px;
-    background-image: url(/images/star_vector_ico.svg);
+    background-image: url(../images/star_vector_ico.svg);
 }
 
 .rating {
@@ -659,7 +659,7 @@ body {
 }
 
 .hotel_filters {
-    background-image: url(/images/hotel-filters.jpg);
+    background-image: url(../images/hotel-filters.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 35px 70px 65px 70px;
@@ -795,7 +795,7 @@ body {
     padding-left: 20px;
     appearance: none; 
     overflow: hidden;
-    background: url(/images/arrow_select_price.svg) no-repeat;  
+    background: url(../images/arrow_select_price.svg) no-repeat;  
     background-position: bottom 20px right 21px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
@@ -839,7 +839,7 @@ body {
     content: "";
     width: 16px;
     height: 14px;
-    background-image: url(/images/icon-table.svg);
+    background-image: url(../images/icon-table.svg);
     left:34%;
     top:32%;
 }
@@ -850,7 +850,7 @@ body {
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url(/images/icon-slideshow.svg);
+    background-image: url(../images/icon-slideshow.svg);
     left:34%;
     top:32%;
 }
@@ -861,7 +861,7 @@ body {
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url(/images/icon-list.svg);
+    background-image: url(../images/icon-list.svg);
     left:34%;
     top:32%;
 }
@@ -1009,7 +1009,7 @@ body {
 }
 
 .checkbox_input:checked ~ .checkbox_label::before  {
-    background-image: url("/images/checked.svg");
+    background-image: url("../images/checked.svg");
 }
 
 .radio {
@@ -1383,7 +1383,7 @@ body {
 
 
 .field_date {
-    background-image: url("./images/calendar.svg");
+    background-image: url("../images/calendar.svg");
     background-position: right 20px center;
     background-repeat: no-repeat;
     background-size: 15px 15px;
